@@ -1,4 +1,4 @@
-<div class="section lienhe bg1">
+<div class="section lienhe" style="background: url(frontend/imgs/chudautu-02.png);">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
