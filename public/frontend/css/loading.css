@@ -1,0 +1,5 @@
+.loadd{position:fixed;background:#183242;z-index:1000;top:0;left:0;width:100%;height:100vh}
+.loadd .body img{ width: 250px;}
+.loadd .body{height: 100vh;
+    line-height: 100vh;
+    text-align: center;}

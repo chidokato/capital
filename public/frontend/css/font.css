@@ -1,0 +1,9 @@
+@font-face {
+  font-family: Charmonman;
+  src: url(../font/Charmonman-Bold.ttf);
+  src: url(../font/Charmonman-Regular.ttf);
+}
+@font-face {
+  font-family: CormorantGaramond;
+  src: url(../font/CormorantGaramond-Regular.ttf);
+}

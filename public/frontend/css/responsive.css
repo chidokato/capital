@@ -1,0 +1,134 @@
+@media (min-width: 821px){
+	.img-mobile{ display: none; }
+}
+@media (max-width: 820px){
+.fp-scrollable .fp-section, .fp-scrollable .fp-slide{ height: auto; }
+.logo{ top: 0; left: 0; width: 135px; }
+.header{ bottom: 10px; top: auto; width: 100%; right: 0; }
+.header ul{ justify-content: space-around; }
+#myVideo{ height: auto; width: 100%; }
+#myVideo {
+    position: initial;
+}
+.home img.capital {
+    width: 90%;
+}
+.home img.text {
+    margin-top: 100px;
+}
+.tongquan{
+	padding-left: 0px;
+}
+.tongquan .box-content{
+    margin: 0px 30px;
+    margin-top: 100px;
+    margin-left: 30px;
+    font-size: 1.9rem
+}
+#fp-nav.fp-left {
+    left: 0px;
+}
+.tongquan .image{
+	height: auto;
+}
+.imagemaps{ display: none; }
+.img-mobile{ width: 100% }
+
+.vitri{ padding-bottom: 100px; padding-top: 50px }
+.vitri .img img{ width: 50%; }
+.vitri .img{ margin-top: 30px; text-align: left; }
+.vitri img{ width: 100%; height: auto; }
+.vitri .content p{ margin: 10px 20px; margin-bottom: 26px;font-size: 2rem !important;
+    line-height: 3rem; }
+.vitri .row {display: block;}
+
+.lienketvung{ padding-top: 100px; padding-bottom: 100px }
+.lienketvung .img{ text-align: center; }
+.lienketvung .container, .tienich .container, .thietkecanho .container{ width: 95%; }
+.tienich .title p{ display: flex; align-items: center; margin-bottom: 30px }
+.tienich { padding-top: 100px; padding-bottom: 100px }
+.tienich .owl-nav{ display: none; }
+.slider-tienich{ margin-bottom: 40px; }
+.thietkecanho{ padding-top: 100px; padding-bottom: 100px }
+.thietkecanho img{ width: 100% }
+.thietkecanho .content ul li{ margin-bottom: 5px }
+.nav-pills>li>a{ padding: 10px }
+.lienhe{ padding-top: 100px; padding-bottom: 100px }
+.lienhe p {
+    font-size: 2.3rem;
+}
+.lienhe .col-lg-6{ margin-bottom: 100px; }
+.lienhe h3{ font-size: 2rem; line-height: 3rem; }
+#myVideo{ top: auto !important; bottom: auto !important; position: relative; }
+.thietkecanho .tab-buton button{ font-size: 1.5rem }
+
+}
+
+@media (max-width: 415px){
+
+#fp-nav{ display: none; }
+.home{ padding-top: 100px }
+
+.home img.text { width: 70%;margin-top: 0px;margin-bottom: 0px}
+.home img.capital {width: 100%;}
+.header li a span{display: none;}
+.tongquan .box-content{ margin-left: 30px; padding: 10px; font-size: 1.3rem; margin-top: 90px }
+.tongquan .image { height: 410px;}
+.img-mobile { width: 100%;}
+
+.tongquan .box-content{ margin-top: 50px }
+.vitri {padding-bottom: 50px;padding-top: 0px;}
+.vitri .content p {font-size: 1.5rem !important;line-height: 2rem;text-align: justify;}
+.lienketvung .content .img img { width: 70%;}
+.lienketvung {padding-top: 30px; padding-bottom: 30px;}
+
+.tienich .img img{ width: 80% }
+.tienich{ padding: 30px 0px }
+.tienich .title p {flex-direction: column; text-align: left; align-items: flex-start; font-size: 1.5rem}
+.tienich .title strong{ font-size: 3rem }
+.tienich h3{ font-size: 2rem }
+.lienketvung .list{ padding: 15px }
+.lienketvung .list li {font-size: 1.2rem;}
+.lienketvung .list h3 {
+    font-size: 2rem;margin-top: 0px;
+}
+.lienketvung .list img {
+    width: 16px;
+    margin-bottom: 1px;
+}
+
+.thietkecanho .tkch-1 {
+    flex-direction: column;    align-items: flex-start;
+}
+.thietkecanho{ padding-top: 20px }
+.thietkecanho img{ width: 70%; margin-bottom: 20px }
+.thietkecanho .content ul li{ font-size: 1.4rem !important; }
+.thietkecanho .tab-buton button{ font-size: 1.4rem }
+
+/*.home .row,.tongquan .row,.vitri .row,.lienketvung .row,.tienich .row,.thietkecanho .row{ width: 100% }*/
+.image-map{ display: none; }
+
+.fp-scrollable .fp-section, .fp-scrollable .fp-slide{ height: auto !important; }
+.popup-dangky h5 {
+    font-size: 2rem;
+}
+.header-lang {
+    width: 100%;
+    right: 0;
+    top: 0;
+    margin: 0;
+    background: #183242;
+    display: flex;
+    justify-content: flex-end;
+    height: 60px;
+    z-index: 111;
+}
+.logo {
+    z-index: 9999;width: 100px;
+}
+
+
+
+
+
+}
