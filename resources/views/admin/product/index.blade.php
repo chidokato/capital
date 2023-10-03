@@ -17,7 +17,7 @@
                     <!-- <li><a data-toggle="tab" class="nav-link " href="#tab2">Hiển thị</a></li> -->
                     <!-- <li><a data-toggle="tab" class="nav-link" href="#tab3">Ẩn</a></li> -->
                 </ul>
-            </div>
+            </div> 
             <div class="tab-content">
                 <div class="tab-pane overflow active" id="tab2">
                     @if(count($posts) > 0)

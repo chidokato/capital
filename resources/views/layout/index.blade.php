@@ -93,7 +93,7 @@
     <div class="section active chinh-sach" style="background: url(frontend/imgs/chinh-sach-ban-hang_1.jpg); background-position: bottom; background-repeat: no-repeat;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2">
+                <div class="col-lg-2"> 
                     
                 </div>
                 <div class="col-lg-5 left" data-aos="fade-right">
@@ -150,6 +150,8 @@
         @elseif($key==4)
             @include('pages.ladingpage.thietkecanho')
         @elseif($key==5)
+            @include('pages.ladingpage.matbang')
+        @elseif($key==6)
             @include('pages.ladingpage.lienhe')
         @endif
 

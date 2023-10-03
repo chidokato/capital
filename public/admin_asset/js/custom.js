@@ -21,7 +21,7 @@ $(document).ready(function(){
             $("#list_parent").html(data);
         });
     });
-}); // change sản phẩm show màu sắc
+});
 // change category lang
 
 // upload images
@@ -45,8 +45,12 @@ function readURL(input) {
 $(document).ready(function(){
     $("select#province").change(function(){
         var id = $(this).val();
+        // alert(id);
         $.get("ajax/change_province/"+id,function(data){
             $("#district").html(data);
+        });
+        $.get("ajax/change_province_lang/"+id,function(data1){
+            $("#list_province").html(data1);
         });
     });
 });
@@ -55,6 +59,17 @@ $(document).ready(function(){
         var id = $(this).val();
         $.get("ajax/change_district/"+id,function(data){
             $("#ward").html(data);
+        });
+        $.get("ajax/change_district_lang/"+id,function(data){
+            $("#list_district").html(data);
+        });
+    });
+});
+$(document).ready(function(){
+    $("select#ward").change(function(){
+        var id = $(this).val();
+        $.get("ajax/change_ward_lang/"+id,function(data){
+            $("#list_ward").html(data);
         });
     });
 });
@@ -70,8 +85,7 @@ $(document).ready(function(){
             $("#load_category").html(data);
         });
     });
-});
-$(document).ready(function(){
+
     $("select#parent").change(function(){
         var id = $(this).val();
         // alert(id);
@@ -79,4 +93,43 @@ $(document).ready(function(){
             $("#load_category").html(data);
         });
     });
+
+    $("input#view").blur(function(){
+        var view = $(this).val();
+        var id = $(this).parents('#category').find('input[name="id"]').val();
+        // alert(id);
+        $.get("ajax/update_category_view/"+id+"/"+view,function(data){
+            // $("#load_category").html(data);
+        });
+    });
 });
+
+// sản phẩm
+$(document).ready(function(){
+    $("button#del_img_detail").click(function(){
+        var id = $(this).parents('#detail_img').find('input[id="id_img_detail"]').val();
+        // alert(id);
+        $.ajax({
+            url: 'ajax/del_img_detail/'+id,
+            type: 'GET',
+            cache: false,
+            data: {
+                "id":id
+            },
+        });
+    });
+}); // xóa ảnh trong db
+$(document).ready(function(){
+    $("button#del_section").click(function(){
+        var id = $(this).parents('#section').find('input[id="id_section"]').val();
+        // alert(id);
+        $.ajax({
+            url: 'ajax/del_section/'+id,
+            type: 'GET',
+            cache: false,
+            data: {
+                "id":id
+            },
+        });
+    });
+}); // xóa ảnh trong db

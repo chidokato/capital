@@ -27,6 +27,7 @@
                                 <tr>
                                     <th></th>
                                     <th>Name</th>
+                                    <th>View</th>
                                     <th>Slug</th>
                                     <th>date</th>
                                     <th></th>
@@ -40,6 +41,7 @@
                                     <td>
                                         <a href="{{route('category.edit',[$val->category_id])}}">{{$val->name}}</a>
                                     </td>
+                                    <td>{{$val->category->view}}</td>
                                     <td>{{$val->category->slug}}</td>
                                     <td>{{$val->updated_at}}</td>
                                     <td>

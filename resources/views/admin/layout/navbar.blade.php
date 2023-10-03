@@ -9,7 +9,7 @@
         <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup> </div>
     </a>
 
-    <!-- Divider -->
+    <!-- Divider --> 
     <hr class="sidebar-divider my-0">
 
     <!-- Nav Item - Dashboard -->
