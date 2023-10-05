@@ -152,6 +152,8 @@
         @elseif($key==5)
             @include('pages.ladingpage.matbang')
         @elseif($key==6)
+            @include('pages.ladingpage.canho')
+        @elseif($key==7)
             @include('pages.ladingpage.lienhe')
         @endif
 

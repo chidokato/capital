@@ -15,15 +15,8 @@
             </div>
         </div>
         <div class="row" data-aos="fade-up">
-            <div class="wrapper_tabcontent">
-                <div id="pk" class="tabcontent active-tab"></div>
-                <div id="pn" class="tabcontent"></div>
-                <div id="bep" class="tabcontent"></div>
-                <div id="tam" class="tabcontent"></div>
-                <div id="logia" class="tabcontent"></div>
-            </div>
             <div class="col-lg-12">
-                <div class="tab-buton tabs">
+                <!-- <div class="tab-buton tabs">
                     <button class="tablinks active-tab" data-electronic="pk" id="tkch" value="pk">{{__('lang.phongkhach')}}</button>
                     <button class="tablinks" data-electronic="pn" id="tkch" value="pn">{{__('lang.phungngu')}}</button>
                     <button class="tablinks" data-electronic="bep" id="tkch" value="bep">{{__('lang.Phongbep')}}</button>
@@ -40,40 +33,71 @@
                         <div class="item"><img class="lazyload" data-src="frontend/imgs/khach/pk5.jpg"></div>
                         <div class="item"><img class="lazyload" data-src="frontend/imgs/khach/pk6.jpg"></div>
                     </div>
+                </div> -->
+                <div class="tabtkch">
+                    <button class="tablinks1 active" onclick="tkcanho(event, 'phongkhach')">{{__('lang.phongkhach')}}</button>
+                    <button class="tablinks1" onclick="tkcanho(event, 'phungngu')">{{__('lang.phungngu')}}</button>
+                    <button class="tablinks1" onclick="tkcanho(event, 'Phongbep')">{{__('lang.Phongbep')}}</button>
+                    <button class="tablinks1" onclick="tkcanho(event, 'phongtam')">{{__('lang.phongtam')}}</button>
+                    <button class="tablinks1" onclick="tkcanho(event, 'logia')">{{__('lang.logia')}}</button>
                 </div>
-                
+
+                <div id="phongkhach" class="tabcontent tabcontent1" style="display: block;">
+                    <div class="listanhcanho">
+                        <img class="lazyload" data-src="frontend/imgs/khach/pk1.webp">
+                        <img class="lazyload" data-src="frontend/imgs/khach/pk2.webp">
+                        <img class="lazyload" data-src="frontend/imgs/khach/pk3.webp">
+                        <img class="lazyload" data-src="frontend/imgs/khach/pk4.webp">
+                    </div>
+                </div>
+                <div id="phungngu" class="tabcontent tabcontent1">
+                    <div class="listanhcanho">
+                        <img class="lazyload" data-src="frontend/imgs/phongngu/phongngu1.webp">
+                        <img class="lazyload" data-src="frontend/imgs/phongngu/phongngu2.webp">
+                        <img class="lazyload" data-src="frontend/imgs/phongngu/phongngu3.webp">
+                        <img class="lazyload" data-src="frontend/imgs/phongngu/phongngu4.webp">
+                    </div>
+                </div>
+                <div id="Phongbep" class="tabcontent tabcontent1">
+                    <div class="listanhcanho">
+                        <img class="lazyload" data-src="frontend/imgs/bep/bep1.webp">
+                        <img class="lazyload" data-src="frontend/imgs/bep/bep2.webp">
+                        <img class="lazyload" data-src="frontend/imgs/bep/bep3.webp">
+                        <img class="lazyload" data-src="frontend/imgs/bep/bep4.webp">
+                    </div>
+                </div>
+                <div id="phongtam" class="tabcontent tabcontent1">
+                    <div class="listanhcanho">
+                        <img class="lazyload" data-src="frontend/imgs/phongtam/phongtam1.webp">
+                        <img class="lazyload" data-src="frontend/imgs/phongtam/phongtam2.webp">
+                        <img class="lazyload" data-src="frontend/imgs/phongtam/phongtam3.webp">
+                        <img class="lazyload" data-src="frontend/imgs/phongtam/phongtam4.webp">
+                    </div>
+                </div>
+                <div id="logia" class="tabcontent tabcontent1">
+                    <div class="listanhcanho">
+                        <img class="lazyload" data-src="frontend/imgs/logia/logia1.webp">
+                        <img class="lazyload" data-src="frontend/imgs/logia/logia2.webp">
+                        <img class="lazyload" data-src="frontend/imgs/logia/logia3.webp">
+                        <img class="lazyload" data-src="frontend/imgs/logia/logia4.webp">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
-
-
-
-<script type="text/javascript">
-    var tabLinks = document.querySelectorAll(".tablinks");
-    // var tabContent =document.querySelectorAll(".tabcontent");
-
-    tabLinks.forEach(function(el) {
-       el.addEventListener("click", openTabs);
-    });
-
-
-    function openTabs(el) {
-       var btn = el.currentTarget; // lắng nghe sự kiện và hiển thị các element
-       var electronic = btn.dataset.electronic; // lấy giá trị trong data-electronic
-     
-       // tabContent.forEach(function(el) {
-       //    el.classList.remove("active");
-       // }); //lặp qua các tab content để remove class active
-
-       tabLinks.forEach(function(el) {
-          el.classList.remove("active-tab");
-       }); //lặp qua các tab links để remove class active
-
-       document.querySelector("#" + electronic).classList.add("active-tab");
-       // trả về phần tử đầu tiên có id="" được add class active
-       
-       btn.classList.add("active-tab");
-       // các button mà chúng ta click vào sẽ được add class active
+<style type="text/css">
+    /* Change background color of buttons on hover */
+    .tabtkch button:hover {
+      color: #fff;
     }
-</script>
+
+    /* Create an active/current tablink class */
+    .tabtkch button.active {
+      color: #fff;
+    }
+    .tabtkch{ margin: 30px 0px; }
+    .tabtkch button{ padding: 5px 60px; font-size: 18px; background: #bd956c; color: #000; border: none; border-radius: 3px; margin: 0px 5px; }
+    .listanhcanho{display: flex; justify-content: space-between; }
+    .listanhcanho img{ width: 24%; border-radius: 5px; height: 270px; object-fit: cover; }
+</style>
