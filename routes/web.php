@@ -27,8 +27,8 @@ Route::get('/lang/{locale}', function ($locale) {
     }
     App::setLocale($locale);
     Session::put('locale', $locale);
-    // return redirect()->back();
-    return redirect()->route('home'.$locale.'');
+    return redirect()->back();
+    // return redirect()->route('home');
     // ...
 });
 
@@ -74,9 +74,7 @@ Route::middleware(['auth'])->group(function () {
 });
 
 // home
-Route::get('/', [HomeController::class, 'index'])->name('homevi');
-// Route::get('/vi', [HomeController::class, 'index'])->name('homevi');
-// Route::get('/en', [HomeController::class, 'index'])->name('homeen');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 // Route::get('/cn', [HomeController::class, 'index'])->name('homecn');
 // Route::get('about', [HomeController::class, 'about'])->name('about');
 // Route::get('contact', [HomeController::class, 'contact'])->name('contact');
