@@ -232,7 +232,9 @@ button.submit{ width:auto; }
 
 .container{ width: 100% }
 
-.chinh-sach{}
+.chinh-sach{ background: url(../../frontend/imgs/chinh-sach-ban-hang_1.jpg); background-position: bottom; background-repeat: no-repeat; }
+.chinh-sach .anh1{ width: 80%; margin-top: 200px; }
+.chinh-sach .anh2{ width: 80%; margin-top: 30px; }
 
 .home{ display: flex; align-items: flex-end; }
 .home img.text{ width: 550px; margin-top: 100px }
@@ -339,6 +341,95 @@ button.submit{ width:auto; }
 .thietkecanho .tab-buton .active-tab{ color: #c1976d;box-shadow: 0px 0px 0px 1px; border-radius: 5px; }
 .slider-tkch .active{  }
 .slider-tkch .center{  }
+
+.matbang{display: flex;align-items: center;}
+.matbang h3{ text-align: center;
+    color: #bd956c;
+    margin-bottom: 3rem;
+    font-size: 4rem;
+    font-weight: bold;
+}
+.matbang .detail{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.matbang p{
+    font-size: 15px;
+    text-align: left;
+    font-style: italic;
+}
+.matbang .anh1{ width: 85% }
+
+.detail .tab button{ width: 46%; margin: 10px; border-radius: 5px; }
+    .canho{display: flex;align-items: center;}
+    .canho h3{ text-align: center;
+        color: #bd956c;
+        margin-bottom: 4rem;
+        font-size: 4rem;
+        font-weight: bold;
+    }
+    .canho .detail{
+        width: 85%;
+        margin: 0 auto;
+        margin-top: 50px;
+        display: flex;
+    }
+    .canho .macan{
+        background: #fff;
+        font-weight: bold;
+        font-size: 45px;
+        border-radius: 5px;
+        padding: 20px 15px 5px;
+        white-space: nowrap;
+        margin: 10px;
+    }
+.canho img{ width: 85% }
+
+    /* Style the tab */
+.tab {
+  overflow: hidden;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  float: left;
+  padding: 7px;
+  transition: 0.3s;
+  font-size: 17px;
+  background: #bd956c;
+  border: none;
+  font-weight: bold;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  color: #fff;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  color: #fff;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+}
+
+/* Change background color of buttons on hover */
+    .tabtkch button:hover {
+      color: #fff;
+    }
+
+    /* Create an active/current tablink class */
+    .tabtkch button.active {
+      color: #fff;
+    }
+    .tabtkch{ margin: 30px 0px; }
+    .tabtkch button{ padding: 5px 60px; font-size: 18px; background: #bd956c; color: #000; border: none; border-radius: 3px; margin: 0px 5px; }
+    .listanhcanho{display: flex; justify-content: space-between; }
+    .listanhcanho img{ width: 24%; border-radius: 5px; height: 270px; object-fit: cover; }
 
 .lienhe h2{ color: #fff; font-size: 6rem; margin-bottom: 20px; }
 .lienhe p{ margin-bottom: 10px; }

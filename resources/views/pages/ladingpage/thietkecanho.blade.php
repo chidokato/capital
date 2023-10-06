@@ -86,18 +86,3 @@
         </div>
     </div>
 </div>
-<style type="text/css">
-    /* Change background color of buttons on hover */
-    .tabtkch button:hover {
-      color: #fff;
-    }
-
-    /* Create an active/current tablink class */
-    .tabtkch button.active {
-      color: #fff;
-    }
-    .tabtkch{ margin: 30px 0px; }
-    .tabtkch button{ padding: 5px 60px; font-size: 18px; background: #bd956c; color: #000; border: none; border-radius: 3px; margin: 0px 5px; }
-    .listanhcanho{display: flex; justify-content: space-between; }
-    .listanhcanho img{ width: 24%; border-radius: 5px; height: 270px; object-fit: cover; }
-</style>

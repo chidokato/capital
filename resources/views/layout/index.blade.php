@@ -90,7 +90,7 @@
 <a href="{{asset('')}}"><img class="logo" src="frontend/imgs/logo-09.png"></a>
 
 <div id="fullpage">
-    <div class="section active chinh-sach" style="background: url(frontend/imgs/chinh-sach-ban-hang_1.jpg); background-position: bottom; background-repeat: no-repeat;">
+    <div class="section active chinh-sach" >
         <div class="container">
             <div class="row">
                 <div class="col-lg-2"> 
@@ -98,8 +98,9 @@
                 </div>
                 <div class="col-lg-5 left" data-aos="fade-right">
                     <h2 style="position: absolute; left: -10000px">Tổng quan dự án Capital Elite 18 Phạm Hùng</h2>
+                    <img class="anh1" src="frontend/imgs/tongquan1.png">
                     <a id="modal" href="" data-toggle="modal" data-target="#exampleModal">
-                    <img style="width: 60%; margin-top: 40%" alt="Chung cư Capital Elite 18 Phạm Hùng" class="text" src="frontend/imgs/chinh sach ban hang-03.png">
+                    <img class="anh2" alt="Chung cư Capital Elite 18 Phạm Hùng" class="text" src="frontend/imgs/chinhsach.png">
                     </a>
                 </div>
                 <div class="col-lg-5 right" data-aos="fade-left">
@@ -108,7 +109,7 @@
         </div>
     </div>
 
-    <div class="section home " style="background: url(frontend/imgs/capital-elite-new-01.png);">
+    <!-- <div class="section home " style="background: url(frontend/imgs/capital-elite-new-01.png);">
         <div class="container">
             <div class="row">
                 <div class="col-lg-2">
@@ -117,7 +118,6 @@
                 <div class="col-lg-5 left" data-aos="fade-right">
                     <h2 style="position: absolute; left: -10000px">Tổng quan dự án Capital Elite 18 Phạm Hùng</h2>
                     <img alt="Chung cư Capital Elite 18 Phạm Hùng" class="text" src="frontend/imgs/capital-elite_new-03.png">
-                    <!-- <img alt="Chung cư Capital Elite 18 Phạm Hùng" class="text" src="frontend/imgs/lang/toangquantext_{{Session::get('locale')}}.png"> -->
                     
                 </div>
                 <div class="col-lg-5 right" data-aos="fade-left">
@@ -125,7 +125,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="section fp-table video ">
         <div class="container">
@@ -281,7 +281,7 @@
         verticalCentered: false,
         // sectionsColor: ['#0c254e', '#1f4481', '#0c254e', '#0c254e', '#0c254e', '#0c254e', '#0c254e'], // backgroud corlor
         anchors: [
-            'chinh-sach',
+            // 'chinh-sach',
             'Capital-Elite',
             @foreach($category as $key => $val)
             '{{$val->category->slug}}',
@@ -290,7 +290,7 @@
         // verticalCentered: false,
         navigation:true,
         navigationTooltips: [
-            'Chính sách bán hàng',
+            // 'Chính sách bán hàng',
             'Capital Elite',
             @foreach($category as $key => $val)
             '{{$val->category->name}}',
