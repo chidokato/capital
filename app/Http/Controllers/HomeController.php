@@ -41,7 +41,13 @@ class HomeController extends Controller
 
     public function img360()
     {
-        return view('pages.img360');
+        $locale = App::currentLocale();
+        $category = CategoryTranslation::join('categories', 'categories.id', '=', 'category_translations.category_id')
+            ->where('locale', $locale)
+            ->select('category_translations.*')->orderBy('categories.view', 'asc')->get();
+        return view('pages.img360', compact(
+            'category',
+        ));
     }
 
 
