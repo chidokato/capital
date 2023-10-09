@@ -39,6 +39,12 @@ class HomeController extends Controller
         ));
     }
 
+    public function img360()
+    {
+        return view('pages.img360');
+    }
+
+
     public function about()
     {
         $locale = App::currentLocale();
