@@ -25,6 +25,20 @@
     <h2 class="h3 mb-0 text-gray-800 line-1 size-1-3-rem">Thêm mới</h2>
 </div>
 
+<textarea id="my-editor" name="content" class="form-control"></textarea>
+<script src="//cdn.ckeditor.com/4.6.2/standard/ckeditor.js"></script>
+<script>
+  var options = {
+    filebrowserImageBrowseUrl: '{{asset('')}}laravel-filemanager?type=Images',
+    filebrowserImageUploadUrl: '{{asset('')}}laravel-filemanager/upload?type=Images&_token=',
+    filebrowserBrowseUrl: '{{asset('')}}laravel-filemanager?type=Files',
+    filebrowserUploadUrl: '{{asset('')}}laravel-filemanager/upload?type=Files&_token='
+  };
+</script>
+<script>
+CKEDITOR.replace('my-editor', options);
+</script>
+
 <div class="row">
   <div class="col-xl-9 col-lg-9">
         <!-- <div class="card shadow mb-4">

@@ -63,24 +63,6 @@
         </div>
     </div>
 
-    <script src="ckeditor/ckeditor.js"></script>
-    <script type="text/javascript">
-        CKEDITOR.replace ('ckeditor' ,{
-            filebrowserBrowseUrl : 'filemanager/dialog.php?type=2&editor=ckeditor&fldr=',
-            filebrowserUploadUrl : 'filemanager/dialog.php?type=2&editor=ckeditor&fldr=',
-            filebrowserImageBrowseUrl : 'filemanager/dialog.php?type=1&editor=ckeditor&fldr='
-        });
-        
-        @for ($i = 1; $i <= 10; $i++)
-            CKEDITOR.replace ('ckeditor{{$i}}' ,{
-                filebrowserBrowseUrl : 'filemanager/dialog.php?type=2&editor=ckeditor&fldr=',
-                filebrowserUploadUrl : 'filemanager/dialog.php?type=2&editor=ckeditor&fldr=',
-                filebrowserImageBrowseUrl : 'filemanager/dialog.php?type=1&editor=ckeditor&fldr='
-            });
-        @endfor
-        
-    </script>
-    
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <!-- <script src="admin_asset/jquery/jquery.min.js"></script> -->
     <script src="admin_asset/bootstrap/js/bootstrap.bundle.min.js"></script>
