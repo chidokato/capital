@@ -83,6 +83,6 @@ Route::get('360', [HomeController::class, 'img360'])->name('img360');
 // Route::get('/cn', [HomeController::class, 'index'])->name('homecn');
 // Route::get('about', [HomeController::class, 'about'])->name('about');
 // Route::get('contact', [HomeController::class, 'contact'])->name('contact');
-// Route::post('dangky', [HomeController::class, 'dangky'])->name('dangky');
+Route::post('dangky', [HomeController::class, 'dangky'])->name('dangky');
 // Route::get('{slug}', [HomeController::class, 'category']);
 // Route::get('{catslug}/{slug}', [HomeController::class, 'post']);
