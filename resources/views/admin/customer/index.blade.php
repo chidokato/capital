@@ -39,7 +39,7 @@
                                     <td>{{$val->name}}</td>
                                     <td>{{$val->phone}}</td>
                                     <td>{{$val->email}}</td>
-                                    <td><div>{{$val->content}}</div></td>
+                                    <td><div title="{{$val->content}}" style="width: 400px; overflow: hidden;">{{$val->content}}</div></td>
                                     <td>{{$val->updated_at}}</td>
                                     <td style="display: flex;">
                                         <form action="{{route('customer.destroy', [$val->id])}}" method="POST">
