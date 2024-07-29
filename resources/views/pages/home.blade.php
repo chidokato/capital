@@ -94,7 +94,7 @@
 <div class="header">
     <ul>
         <li> <a id="modal" href="" data-toggle="modal" data-target="#exampleModal"><img src="frontend/imgs/icon-register.svg"> <span>{{__('lang.contact')}}</span></a></li>  
-        <li> <a href="tel:0916442096"><img src="frontend/imgs/icon-call.svg"> <span>0916 442 096</span></a></li>  
+        <li> <a href="tel:0377704444"><img src="frontend/imgs/icon-call.svg"> <span>037 770 4444</span></a></li>  
     </ul>
 </div>
 <div class="header-lang">
