@@ -28,7 +28,7 @@
                     <h2 style="position: absolute; left: -10000px">Tổng quan dự án Capital Elite 18 Phạm Hùng</h2>
                     <img class="anh1" src="frontend/imgs/tongquan1.png">
                     <a id="modal" href="" data-toggle="modal" data-target="#exampleModal">
-                    <img class="anh2" alt="Chung cư Capital Elite 18 Phạm Hùng" class="text" src="frontend/imgs/chinhsach.png">
+                    <img class="anh2" alt="Chung cư Capital Elite 18 Phạm Hùng" class="text" src="frontend/imgs/chinhsach-29-7.png">
                     </a>
                 </div>
                 <div class="col-lg-5 right" data-aos="fade-left">
