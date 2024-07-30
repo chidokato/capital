@@ -84,7 +84,6 @@
         @elseif($key==7)
             @include('pages.ladingpage.lienhe')
         @endif
-
     @endforeach
 
 

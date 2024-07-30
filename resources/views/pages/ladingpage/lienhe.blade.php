@@ -14,7 +14,7 @@
             </div>
             <div class="col-lg-6" data-aos="fade-up-left">
                 <h3>{{__('lang.sanbds')}} <br> {{__('lang.sanbds1')}}</h3>
-                <img class="logo1" class="lazyload" data-src="frontend/imgs/lang/indochine_logo_{{Session::get('locale')}}.png">
+                <img style="width: 157px;" class="logo1" class="lazyload" data-src="frontend/imgs/logo-idc.png">
             </div>
         </div>
     </div>
